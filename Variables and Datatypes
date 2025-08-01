@@ -1,0 +1,58 @@
+Variables:-
+        Variables are containers used to store data values during the execution of a program.
+
+Local Variables:-
+        Declared inside method or block.
+        Must be initialized before use.
+
+public void show(){
+    int age=25;//local variable
+    System.out.println(age);
+}
+
+Instance Variables:-
+        Declared inside the class,but outside the method.
+        When object is created.
+
+class student{
+    String name;//Instance 
+    int age;//instance
+    public void show(){
+        System.out.println(name+"is"+age+" years old.");
+    }
+}
+
+Static Variables:-
+        Declared with the static keyword.
+        shared among all objects of the class.
+
+class Student {
+    static String school = "ABC School";  // static variable
+}
+
+syntax:-
+dataType variableType;
+dataType variableType=value;
+
+Datatypes:-
+        Data types specify the kind of data a variable can hold. They are divided into two categories.
+
+1.Primitive Datatypes
+2.Non Primitive Datatypes.
+
+1.Primitive Datatypes:-
+double price=99.99;
+char c='A';
+int x=123456;
+short s=5000;
+float f=5.5f;
+long l=999999L;
+byte b=100;
+boolean b=true;
+
+2.Non Primitive Datatypes:-
+String name="Java";//string
+int[] arr={1,2,3};//array
+Student s=new Student();//classes
+Runnable r=new Task();//interfaces
+
