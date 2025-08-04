@@ -1,0 +1,139 @@
+Control Statements:-
+      A Control Statement is used to control the flow of the execution of a program. In the Java programming language,
+we can control the flow of execution of a program based on some conditions.
+
+if statement:
+      The if statement in Java is a decision-making statement that determines whether or not a certain statement or block of statements
+will be executed. The block of statements is executed if a certain condition evaluates to true; otherwise, it is not.
+
+Syntax:-
+if(condition){
+   //body
+}
+
+if-else statement: 
+      Java if statement is used to decide whether a certain statement or block of statements will be executed or not. 
+If a certain condition is true, then the block of statements is executed, otherwise not. 
+
+Syntax:-
+if(condition){
+   //body
+}
+else{
+   //body
+}
+
+Nested if-statement: 
+      Nested if-statement means if statement inside the another if statement. In nested-if statements, the inner if block statements 
+execute only if the outer if block statement is true. 
+
+Syntax:-
+if(condition1) {
+	// execute this block if condition1 is true
+	
+	if(condition2) {
+		// execute this block if condition2 is true
+	}
+}
+
+If else if ladder:-
+      From the top-down, the if sentences are executed. The assumption connected with that it is executed as soon as one of the conditions 
+governing the if is true, and the remainder of the ladder is bypassed. 
+
+Syntax:-
+if(condition1) {
+    // If condition1 is true, this part of the code will be executed
+}
+else if (condition2) {
+    // If condition2 is true, this part of the code will be executed
+} 
+else if (condition3) {
+    // If condition3 is true, this part of the code will be executed
+}
+...
+else {
+    // If all the above conditions are false, this part of the code will be executed
+}
+       
+Switch statement:-
+      A multiway branch statement in Java is the switch statement. It can be used to run a single statement based on a set of conditions. 
+
+Syntax:-
+switch (expression)  {
+    case constant1:
+        // Code to be executed 
+        // If expression is equal to constant1
+        break;
+    case constant2:
+        // Code to be executed 
+        // If expression is equal to constant2
+        break;
+        ...
+    default:
+        // Code to be executed 
+        // If the expression doesn't match any constant
+}
+
+Iterative Statements:-
+while loop: 
+      Java while loop is used to repeat a statement or block of the statement until a condition is true. We can use a while loop 
+if the number of iterations is not fixed.
+
+Syntax:-
+initialization;
+while (condition) {
+    // statements
+
+
+    update_expression;
+}
+
+do-while loop: 
+      Java do-while loop is also used to repeat a statement until a condition is true. Sometimes in our program we want to execute the body 
+of the loop at least once, even if the conditional expression is false, in other words, there are times when you would like to test the conditional 
+expression at the end of the loop rather than the beginning.
+
+Syntax:-
+initialization;
+do {
+    // statements
+    // update_expression;
+}
+while (condition);
+
+for loop: 
+      The for loop in java is used to iterate a part of the program several times. It consumes the initialization, condition checking, and increment/decrement
+a value in one line.
+
+Syntax:-
+for(initialization condition; testing condition; increment/decrement) {
+
+    // statements
+
+}
+
+Jump statements:-
+Break statement:
+      The loops are terminated using the Java break expression. It can be used within a loop. When a break statement is found within a loop, the loop is ended and 
+control is passed to the next statement after the loop. 
+
+1.It can be used to terminate a statement sequence in the switch statement.
+2.It can be used to terminate a loop.
+3.It can be used as a civilized form of goto statement for performing a labeled break.
+
+Syntax:-
+break;
+
+Continue statement: 
+      Java continue statement is used to skip the current iteration of the loop. We can use continue statements in all types of loops. In the case of for loop,
+the continue statement forces the control to jump immediately to the update statement.
+
+Syntax:-
+continue;
+
+Return statement: 
+      Java return statement is used to explicitly return from the method. It transfers the program control back to the caller method. The return statement immediately 
+terminates the method in which it is executed.
+
+Syntax:-
+return;
