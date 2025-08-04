@@ -1,0 +1,104 @@
+Operators:-
+Arithmetic Operators:-
+class ArithmeticOperators{
+    public static void main(String[] args){
+        int a=10,b=3;
+        System.out.println("a+b="+(a+b));
+        System.out.println("a-b="+(a-b));
+        System.out.println("a*b="+(a*b));
+        System.out.println("a/b="+(a/b));
+    }
+}
+
+Relational Operators:-
+class RelationalOperators{
+    public static void main(String[] args){
+        int a=20,b=10;
+        System.out.println("a>b="+(a>b));
+        System.out.println("a<b="+(a<b));
+        System.out.println("a>=b="+(a>=b));
+        System.out.println("a<=b="+(a<=b));
+        System.out.println("a==b="+(a==b));
+        System.out.println("a!=b="+(a!=b));
+    }
+}
+
+Assignment Operators:-
+class AssignmentOperators{
+    public static void main(String[] args){
+        int a=30,b=15;
+        System.out.println("a+=b="+(a+=b));
+        System.out.println("a-=b="+(a-=b));
+        System.out.println("a*=b="+(a*=b));
+        System.out.println("a/=b="+(a/=b));
+    }
+}
+
+Logical Operators:-
+class LogicalOperators{
+    public static void main(String[] args){
+        int a=30,b=15;
+        System.out.println("a&&b="+(a&&b));
+        System.out.println("a||b="+(a||b));
+    }
+}
+
+Increment and Decrement:-
+class IncrementAndDecrementOperators{
+    public static void main(String[] args){
+        int a=10,b=12;
+        System.out.println("a++="+(a++));
+        System.out.println("--b="+(--b));
+        System.out.println("b--="+(b--));
+        System.out.println("++a="+(++a));
+    }
+}
+
+Ternary Operators:-
+class TernaryOperators{
+    public static void main(String[] args){
+        int a=10,b=5;
+        int minimum=(a>b)?a:b;
+        System.out.println("Minimum Number:"+minimum);
+        
+    }
+}
+
+Bitwise Operators:-
+class BitwiseOperators {
+   public static void main(String args[]) {
+      int a = 6;
+      int b = 7;
+      System.out.println("a&b=" + (a&b));
+      System.out.println("a|b=" + (a|b));
+      System.out.println("a^b=" + (a^b));
+      System.out.println("a>>b=" + (a>>b));
+      System.out.println("a<<b=" + (a<<b));
+  }
+}
+
+Input and Output:-
+
+Input:-
+Java takes input using the Scanner class from java.util package.
+
+Step-1: Import Scanner
+import java.util.Scanner;
+
+Step 2: Create Scanner object
+Scanner sc=new Scanner(System.in);
+
+Step 3: Take Input
+next()
+nextLine()	
+nextInt()	
+nextDouble()	
+nextFloat()	
+nextLong()	
+nextBoolean()
+
+Output
+You can print output using:
+System.out.print() → prints without a new line.
+System.out.println() → prints and moves to a new line.
+System.out.printf() → prints formatted output (like C’s printf).
