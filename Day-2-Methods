@@ -1,0 +1,259 @@
+Methods:-
+      Collections of statements or block of code that is used to perform some particular task.
+
+Method Declarartion:-
+      Java provides information about the method attribtes as method,method name,method return type,method visibility,method parameters,method body.
+
+syntax:-
+public int max(int x,int y){
+    //method body
+}
+
+function calling:-
+       Once we declare a method, we need to call this method to perform some specific task. 
+
+class Example {
+ 
+    public static int max(int x, int y) {
+ 
+    if(x > y)
+       return x;
+    else
+        return y;
+    }
+ 
+    // Driver Method
+    public static void main(String args[]) {
+       int a = 10;
+       int b = 20;
+  
+       // Method Calling
+       int maximum = max(a, b);
+       System.out.println(maximum);
+    }
+}
+
+The function being called is called callee(here it is findsum function) and the function which calls the callee is called the caller (here main function is the caller) . 
+
+Predefined Method:-
+           Predefined methods are the methods that are already defined in the java class libraries. It's also known as the built-in method or the standard library method. 
+
+class MaxOfTwoNumbers {
+	public static void main(String args[]) {
+	
+		// Maximum of two numbers using Math.max()
+		int maximum = Math.max(100, 30);
+		System.out.println(maximum);
+	}
+}
+
+class MinOfTwoNumbers {
+	public static void main(String args[]) {
+	
+		// Minimum of two numbers using Math.min()
+		int minimum = Math.min(100, 30);
+		System.out.println(minimum);
+	}
+}
+
+class FindStringLength {
+	public static void main(String args[]) {
+	
+		String str = "Coding Ninjas";
+		
+		// Printing string length using length()
+		System.out.println(str.length());               
+	}
+}
+
+User defined Method:-
+        The method written by the user or programmer is called the user-defined method. We can modify these methods based on our requirements.
+
+No argument(s) passed and no return value:-
+class Solution {
+	
+	// Function to check a number
+	// is even or odd
+	public static void checkEvenOdd() {
+		
+		// Number to be checked
+		int num = 24;
+		
+		if(num % 2 == 0) {
+			System.out.println("Even Number");
+		}
+		else {
+			System.out.println("Odd Number");
+		}
+	}
+	
+	public static void main(String args[]) {
+		// Method Calling
+		checkEvenOdd();
+	}
+		
+}
+
+Arguments passed and do return a value:-
+class Solution {
+	
+	// Function to return the
+	// sum of two numbers
+	public static int sumOfTwoNumbers(int num1, int num2) {
+	
+		int sum = num1 + num2;
+		
+		// Return sum
+		return sum;
+	}
+	
+	public static void main(String args[]) {
+		
+		int a = 10;
+		int b = 20;
+		
+		// Method calling with arguments
+		System.out.println(sumOfTwoNumbers(a, b));
+	}
+		
+}
+
+Arguments passed but don't return a value:-
+class Solution {
+	
+	// Method to check a number is even or odd
+	public static void findEvenodd(int num) {
+		
+		if(num % 2 == 0) {
+			System.out.println("Even Number");
+		}
+
+		else {
+			System.out.println("Odd Number");
+		}
+	}
+	
+	// Driver Method
+	public static void main(String args[]) {
+
+		int num = 24;
+		
+		// argument passed in the method
+		findEvenodd(num);
+	}
+}	
+
+No arguments passed but return a value:-
+class Solution {
+	
+	// Function to return the
+	// sum of two numbers
+	public static int sumOfTwoNumbers() {
+		
+		int a = 10;
+		int b = 20;
+		int sum = a + b;
+		
+		return sum;
+	}
+	
+	public static void main(String args[]) {
+		
+		// No arguments passed in the method
+		int sum = sumOfTwoNumbers();
+		System.out.println(sum);
+	}
+		
+}
+
+Pass by value in java:- 
+
+        The formal parameters are allocated to a new memory when the parameters are passed to a function using the pass-by-value method. 
+The value of these parameters is the same as the value of the actual parameters. 
+
+class Solution {
+	
+	public static void increase(int x, int y) {
+		x++;
+		y = y + 2;
+		
+		// x and y are formal parameters
+		System.out.println(x + ":" + y);
+	}
+	
+	public static void main(String args[]) {
+		
+		int a = 20;
+		int b = 10;
+		increase(a, b);
+		
+		// a and b are actual parameters
+		System.out.println(a + ":" + b);
+			
+	}
+}
+
+Method Overloading:-
+ 
+      Method overloading in Java is when a class has multiple methods of the same name but different parameters.
+The main advantage of the method overloading is to increase the readability of the program. Method overloading is 
+related to compile-time polymorphism. You will learn more about this in OOPs as well.
+
+
+Ways to overload a method:-
+There are two ways to overload a method in java
+
+By changing the number of arguments.
+By changing the data type.
+
+Method overloading with changing the number of arguments.
+
+class Solution {
+	
+	// Function with two parameters
+	public static int add(int num1, int num2) {
+		return num1 + num2;
+	}
+	
+	// Function with three parameters
+	public static int add(int num1, int num2, int num3) {
+		return num1 + num2 + num3;
+	}
+	
+	public static void main(String args[]) {
+		
+		// Method calling by passing arguments
+		int sumOfTwoNumbers = Solution.add(10, 20);
+		int sumOfThreeNumbers = Solution.add(10, 20, 30);
+		
+		System.out.println(sumOfTwoNumbers);
+		System.out.println(sumOfThreeNumbers);
+	}
+		
+}
+
+Method overloading with changing the data type of arguments.
+class Solution {
+	
+	// Function with two integer parameters
+	public static int add(int num1, int num2) {
+		return num1 + num2;
+	}
+	
+	// Function with two double parameters
+	public static double add(double num1, double num2) {
+		return num1 + num2;
+	}
+	
+	public static void main(String args[]) {
+		
+		// Method calling by passing arguments
+		int sumOfTwoNumbers = Solution.add(10, 20);
+		double sumOfThreeNumbers = Solution.add(10.5, 20.5);
+		
+		System.out.println(sumOfTwoNumbers);
+		System.out.println(sumOfThreeNumbers);
+	}
+		
+}
+
